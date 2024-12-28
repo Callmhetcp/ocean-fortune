@@ -1,0 +1,18 @@
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Open Book -->
+  <path d="M30 100 L60 90 L60 120 L30 130 Z" fill="#1DCFFC" opacity="0.3"/>
+  <path d="M90 90 L120 100 L120 130 L90 120 Z" fill="#1DCFFC" opacity="0.3"/>
+  <path d="M60 90 Q75 100 90 90" stroke="#1DCFFC" stroke-width="2" fill="none"/>
+  <line x1="60" y1="90" x2="60" y2="120" stroke="#1DCFFC" stroke-width="2"/>
+  <line x1="90" y1="90" x2="90" y2="120" stroke="#1DCFFC" stroke-width="2"/>
+
+  <!-- Lightbulb for Knowledge -->
+  <circle cx="75" cy="50" r="12" fill="#1DCFFC" />
+  <line x1="75" y1="62" x2="75" y2="80" stroke="#1DCFFC" stroke-width="3" />
+  <rect x="70" y="80" width="10" height="6" fill="#1DCFFC" />
+  <line x1="65" y1="50" x2="55" y2="50" stroke="#1DCFFC" stroke-width="2" />
+  <line x1="85" y1="50" x2="95" y2="50" stroke="#1DCFFC" stroke-width="2" />
+  <line x1="75" y1="38" x2="75" y2="28" stroke="#1DCFFC" stroke-width="2" />
+  <line x1="67" y1="42" x2="60" y2="35" stroke="#1DCFFC" stroke-width="2" />
+  <line x1="83" y1="42" x2="90" y2="35" stroke="#1DCFFC" stroke-width="2" />
+</svg>

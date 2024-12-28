@@ -1,0 +1,15 @@
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Puzzle Piece (Customizable Solution) -->
+  <path d="M40 40 L50 40 L50 50 L60 50 L60 60 L50 60 L50 70 L40 70 L40 60 L30 60 L30 50 L40 50 Z" fill="#1DCFFC" />
+  <path d="M110 40 L100 40 L100 50 L90 50 L90 60 L100 60 L100 70 L110 70 L110 60 L120 60 L120 50 L110 50 Z" fill="#1DCFFC" />
+
+  <!-- Wrench (Problem-solving and adjustment) -->
+  <path d="M85 110 L65 90 L75 80 L85 90 L95 80 L105 90 L95 100 L85 110 Z" fill="#1DCFFC" stroke="#1DCFFC" stroke-width="2"/>
+  <path d="M60 90 L50 100 L55 105 L65 95 Z" fill="#1DCFFC" />
+  
+  <!-- Customizable Pieces Connection -->
+  <line x1="50" y1="40" x2="50" y2="50" stroke="#1DCFFC" stroke-width="2" />
+  <line x1="60" y1="50" x2="60" y2="60" stroke="#1DCFFC" stroke-width="2" />
+  <line x1="50" y1="60" x2="50" y2="70" stroke="#1DCFFC" stroke-width="2" />
+  <line x1="40" y1="60" x2="40" y2="70" stroke="#1DCFFC" stroke-width="2" />
+</svg>

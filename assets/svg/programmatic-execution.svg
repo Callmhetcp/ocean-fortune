@@ -1,0 +1,13 @@
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Gear 1 -->
+  <circle cx="45" cy="75" r="20" fill="#1DCFFC" />
+  <path d="M45 55 L48 58 L52 56 L53 52 L56 53 L58 48 L55 45 L58 42 L56 38 L52 37 L53 33 L48 32 L45 35 L42 32 L38 33 L37 37 L33 38 L32 42 L35 45 L32 48 L33 53 L37 52 L38 56 L42 58 L45 55" fill="#1DCFFC" opacity="0.5"/>
+
+  <!-- Gear 2 -->
+  <circle cx="105" cy="75" r="20" fill="#1DCFFC" />
+  <path d="M105 55 L108 58 L112 56 L113 52 L116 53 L118 48 L115 45 L118 42 L116 38 L112 37 L113 33 L108 32 L105 35 L102 32 L98 33 L97 37 L93 38 L92 42 L95 45 L92 48 L93 53 L97 52 L98 56 L102 58 L105 55" fill="#1DCFFC" opacity="0.5"/>
+
+  <!-- Gear 3 - smaller gear in the center -->
+  <circle cx="75" cy="105" r="15" fill="#1DCFFC" />
+  <path d="M75 90 L77 92 L80 91 L81 88 L83 89 L84 85 L82 83 L84 81 L83 78 L80 77 L81 74 L77 73 L75 76 L72 73 L69 74 L68 77 L64 78 L63 81 L66 83 L63 85 L64 89 L68 88 L69 91 L72 92 L75 90" fill="#1DCFFC" opacity="0.5"/>
+</svg>

@@ -1,0 +1,149 @@
+:root {
+    --text-color: #ffffff;
+    --secondary-text: #8b8ca7;
+    --border-color: #2a2f3e;
+    --hover-color: rgba(255, 255, 255, 0.05);
+    --positive-color: #00c853;
+    --negative-color: #ff3d3d;
+}
+  
+  .crypto_wallet {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+
+  }
+  
+  .table-responsive {
+    width: 100%;
+    /* max-width: 900px; */
+    margin: 0 auto;
+    background: var(--background-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  tr {
+    transition: background-color 0.2s ease;
+  }
+  
+  tr:hover {
+    background-color: var(--hover-color);
+  }
+  
+  td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .asset-info {
+    display: flex;
+    align-items: center;
+    
+    gap: 16px;
+  }
+  
+  .asset-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  
+  .asset-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .asset-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .asset-name {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .asset-name b {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .asset-name small {
+    color: var(--secondary-text);
+    font-size: 13px;
+    display: flex;
+    gap: 8px;
+  }
+  
+  .positive {
+    color: var(--positive-color);
+  }
+  
+  .negative {
+    color: var(--negative-color);
+  }
+  
+  .asset-value {
+    text-align: right;
+  }
+  
+  .value-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .primary-value {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .secondary-value {
+    color: var(--secondary-text);
+    font-size: 13px;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+    
+    td {
+      padding: 12px;
+    }
+    
+    .asset-name b {
+      font-size: 14px;
+    }
+    
+    .asset-name small,
+    .secondary-value {
+      font-size: 12px;
+    }
+    
+    .primary-value {
+      font-size: 14px;
+    }
+    
+    .asset-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }

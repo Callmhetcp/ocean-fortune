@@ -1,0 +1,224 @@
+:root {
+    --background: #0f172a;
+    --surface: #1e293b;
+    --text-color: #ffffff;
+    --secondary-text: #8b8ca7;
+    --primary-dark: #4f46e5;
+    --primary-color: #6366f1;
+    --border-color: #2a2f3e;
+    --hover-color: rgba(255, 255, 255, 0.05);
+    --positive-color: #00c853;
+    --negative-color: #ff0000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scrollbar-width: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+}
+
+/* App Container */
+.app-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+
+/* Payment Container */
+.payment-container {
+    padding: 1.5rem;
+}
+
+/* Payment Card */
+.payment-card {
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Warning Banner */
+.warning-banner {
+    background: rgba(255, 192, 0, 0.1);
+    color: #ffc000;
+    padding: 0.75rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+/* Crypto Amount Section */
+.crypto-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+}
+
+.crypto-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.crypto-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.amount-display {
+    text-align: center;
+}
+
+.crypto-price{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 12px;
+    font-family: monospace;
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+    margin-block: 10px;
+    background: rgba(129, 199, 132, 0.1);
+    color: var(--positive-color);
+    border: 1px solid rgba(46, 193, 53, 0.278);
+}
+.error{
+    color: var(--negative-color);
+    background: rgba(163, 80, 80, 0.1);
+    border: 1px solid rgba(255, 0, 0, 0.278);
+
+
+    
+}
+
+
+
+/* QR Code Section */
+.qr-section {
+    background: white;
+    padding: 1rem;
+    border-radius: 16px;
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.qr-code {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+}
+
+/* Wallet Address */
+.wallet-address {
+    margin: 1.5rem 0;
+}
+
+.wallet-address input {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-color);
+    font-family: monospace;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.action-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: none;
+    background: rgba(144, 202, 249, 0.1);
+    color: #90caf9;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.875rem;
+}
+
+.action-btn:hover {
+    background: rgba(144, 202, 249, 0.2);
+}
+
+.action-btn i {
+    font-size: 1rem;
+}
+
+.copy-btn {
+    background: rgba(144, 202, 249, 0.1);
+    color: #90caf9;
+}
+
+.paid-btn {
+    background: rgba(129, 199, 132, 0.1);
+    color: var(--positive-color);
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Loading Animation */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.loading {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .payment-container {
+        padding: 1rem;
+    }
+
+    .payment-card {
+        padding: 1.25rem;
+    }
+
+    .crypto-value {
+        font-size: 1.25rem;
+    }
+
+    .action-btn span {
+        font-size: 0.75rem;
+    }
+}

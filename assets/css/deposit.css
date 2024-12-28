@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+:root {
+    /* Colors */
+    --background: #0f172a;
+    --surface: #1e293b;
+    --text-color: #ffffff;
+    --secondary-text: #8b8ca7;
+    --primary-dark: #4f46e5;
+    --primary-color: #6366f1;
+    --border-color: #2a2f3e;
+    --hover-color: rgba(255, 255, 255, 0.05);
+    --positive-color: #00c853;
+    --negative-color: #ff3d3d;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: var(--background);
+    color: var(--text-primary);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+input, button {
+    font: inherit;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--text-color);
+}
+
+.app-container {
+    /* margin: 0 auto; */
+    /* min-height: 100vh; */
+    background: var(--surface);
+    position: relative;
+
+}
+
+.header-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.main-content {
+    padding: 1rem;
+
+}
+
+/* Amount Section */
+.amount-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+}
+
+.selected-crypto {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 48px;
+}
+
+.selected-crypto:not(.has-selection) {
+    color: var(--secondary-text);
+    justify-content: center;
+}
+
+.selected-crypto img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.selected-crypto-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.selected-ticker {
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+}
+
+.amount-input-container, .wallet-address-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+.wallet-address-container {
+    justify-content: space-between;
+
+}
+
+.currency-symbol {
+    font-size: 1.25rem;
+    color: var(--secondary-text);
+    font-weight: 500;
+}
+
+
+
+.amount::placeholder,
+.wallet::placeholder {
+    color: var(--secondary-text);
+}
+.copy-button{
+    color: var(--secondary-text);
+    cursor: pointer;
+}
+
+/* Crypto Section */
+.crypto-section {
+    background: var(--surface);
+    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+.crypto-section .wrapper{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 24px;
+    border-radius: 0.75rem;
+
+
+}
+
+.crypto-section h2,
+.amount-section h2{
+    color: var(--secondary-text);
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.crypto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.crypto-option {
+    border-radius: 0.75rem;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crypto-option img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.crypto-name {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.crypto-ticker {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--secondary-text);
+}
+
+.crypto-option.selected {
+    background: rgba(59, 130, 246, 0.1);
+    border: 2px solid var(--primary-color);
+}
+
+.error_message{
+    padding: 6px;
+    background: rgba(190, 31, 55, 0.201);
+    text-align: center;
+    color: rgba(255, 0, 38, 0.737);
+    border: 1px solid rgba(255, 0, 38, 0.507);
+    border-radius: 5px;
+    font-family: sans-serif;
+    transition: all 0.7s ease-in-out;
+    font-size: 11px;
+    font-weight: bold;
+    width: 100%;
+    animation: headShake  1s linear infinite;
+    letter-spacing: 0.8px;
+    display: none;
+}
+.copy_message{
+    padding: 6px;
+    text-align: center;
+    color: var(--positive-color);
+    background: rgba(129, 199, 132, 0.1);
+    border: 1px solid rgba(46, 193, 53, 0.278);
+    border-radius: 5px;
+    font-family: sans-serif;
+    transition: all 0.7s ease-in-out;
+    font-size: 11px;
+    font-weight: bold;
+    width: 100%;
+    animation: headShake  1s linear infinite;
+    letter-spacing: 0.8px;
+    display: none;
+    margin-bottom: 10px;
+}
+/* Deposit Button */
+.deposit-button {
+    background: var(--primary-color);
+    color: var(--text-color);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    transition: transform 0.2s ease;
+}
+
+.deposit-button:active {
+    transform: scale(0.98);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.crypto-option.selected {
+    animation: pulse 0.3s ease-in-out;
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.crypto-option.selected .crypto-name,
+.crypto-option.selected .crypto-ticker {
+    color: var(--text-color);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main-content {
+    animation: slideIn 0.3s ease-out;
+}
+
+@media (max-width: 577px) {
+    .crypto-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 330px) {
+    .crypto-grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+}

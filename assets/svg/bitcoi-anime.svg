@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Gradient for the 'A' and 'T' parts -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E90FF; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color:#FFD700; stop-opacity: 1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- The 'A' part of the logo -->
+  <path d="M50,150 L100,50 L150,150 Z" fill="url(#grad)" stroke="none"/>
+  
+  <!-- The 'T' part of the logo -->
+  <rect x="60" y="100" width="80" height="20" fill="url(#grad)" stroke="none"/>
+  <rect x="90" y="50" width="20" height="50" fill="url(#grad)" stroke="none"/>
+
+  <!-- Subtle shadow effect for depth -->
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="4" dy="4" stdDeviation="6" flood-color="rgba(0, 0, 0, 0.3)" />
+  </filter>
+
+  <g filter="url(#shadow)">
+    <!-- Apply shadow to the logo elements -->
+    <path d="M50,150 L100,50 L150,150 Z" fill="url(#grad)" stroke="none"/>
+    <rect x="60" y="100" width="80" height="20" fill="url(#grad)" stroke="none"/>
+    <rect x="90" y="50" width="20" height="50" fill="url(#grad)" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+.error-page{
+    display: block;
+    height: 100vh;
+}
+.error-page .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    color: white;
+}
+.rounded{
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* background: rgba(255, 255, 255, 0.05); */
+    padding: 30px;
+    width: 500px;
+    border-radius: var(--border-radius);
+    
+}
+.error-page-title{
+    font-size: 200px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); 
+
+}
+.rounded > div{
+    z-index: 2;
+}
+.rounded > div a{
+    padding-inline: 45px;
+    padding-block: 15px;
+    margin-top: 20px;
+    background: var(--color-three-darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: var(--border-radius);
+    transition: all 0.6s ease;
+    cursor: pointer;
+    color: var(--color-five-white);
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.8px;
+    font-family: 'MTN Brighter Sans';
+    font-weight: 900;
+    font-size: 13.3px;
+    transition: all 0.5s ease;
+}
+.rounded > div a:after{
+    box-shadow: var(--box-shadow);
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 103%;
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+    border-radius: inherit;
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+.rounded > div a:hover{
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+
+}
+
+
+@media only screen and (max-width: 670px) {
+    .error-page-title{
+        font-size: 100px;
+    }
+}

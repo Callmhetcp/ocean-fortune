@@ -1,0 +1,9 @@
+Array
+(
+    [transactionId] => txn_6762e428d1d53
+    [cryptoSymbol] => USDT
+    [amount] => 1000
+    [walletAddress] => TVQ6niiLUweyAEL6ZidMVBKkAi8UNKesRs
+    [qrCode] => https://i.imgur.com/9VeaIbb.jpeg
+    [userId] => 483235
+)

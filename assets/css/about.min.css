@@ -1,0 +1,369 @@
+.mobile_navbar .wrapper ul li:nth-of-type(1) span{
+    background: transparent;
+    box-shadow: none;
+}
+.mobile_navbar .wrapper ul li:nth-of-type(2) span{
+    background: #242834;
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.406);
+}
+.mobile_navbar .wrapper ul li:nth-of-type(1)  span a{
+    background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
+    background-clip: text;
+    
+  }
+  .mobile_navbar .wrapper ul li:nth-of-type(2)  span a{
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+.about header{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column-reverse;
+}
+
+
+.about header .head_text{
+    font-size: 32px;
+    color: var(--color-five-white);
+    font-family: 'MTN Brighter Sans';
+    text-transform: uppercase;
+    margin-block-end: 10px;
+}
+
+.about header > .dash{
+    width: 60px;
+    height: 3px;
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+
+
+}
+.about .about_main_content{
+    display: block;
+}
+
+.about .about_main_content > .wrapper{
+    display: flex;
+    height: 100%;
+}
+.about .about_main_content > .wrapper .text_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 65%;
+}
+.about .about_main_content > .wrapper .text_grid .card{
+    width: 100%;
+    height: 100%;
+}
+
+.text_grid .card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  
+}
+.text_grid .card header{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+}
+.text_grid .card header .small_heading{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.text_grid .card header .small_heading .text{
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'MTN Brighter Sans';
+    font-size: 20px;
+}
+.text_grid .card header .small_heading .dash{
+    width: 60px;
+    height: 3px;
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+}
+.text_grid .card header .big_heading{
+    font-size: 25px;
+    color: var(--color-five-white);
+    font-family: 'MTN Brighter Sans';
+    text-transform: capitalize;
+}
+.text_grid .card article{
+    font-family: 'MTN Brighter Sans';
+    font-size: 19px;
+    letter-spacing: 0.7px;
+    padding-inline-end: 30px;
+    line-height: 34px;
+    margin-block-start: 10px;
+    color: var(--color-four-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.text_grid .card article:hover{
+    color: var(--color-five-white);
+}
+.text_grid .card article > div{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-five-white);
+}
+.text_grid .card article > div b{
+    font-family: 'MTN Brighter Sans';
+
+}
+.text_grid .card article > div span{
+    font-family: 'MTN Brighter Sans';
+    font-weight: normal;
+}
+.about .about_main_content > .wrapper .image_grid{
+    display: grid;
+    width: 35%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding-inline-end: 20px;
+    margin-block-start: 80px;
+
+
+}
+.about .about_main_content > .wrapper .image_grid > .text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.about .about_main_content > .wrapper .image_grid > .text .big_text{
+    font-size: 20px;
+    color: var(--color-five-white);
+    font-family: 'MTN Brighter Sans';
+    text-transform: capitalize;
+}
+.about .about_main_content > .wrapper .image_grid > .text .small_text{
+    font-family: 'MTN Brighter Sans';
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    padding-inline-end: 30px;
+    line-height: 27px;
+    margin-block-start: 10px;
+    color: var(--color-four-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about .about_main_content > .wrapper .image_grid .image{
+    height: 100%;
+}
+.about .about_main_content > .wrapper .image_grid .image img{
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.our_team{
+    display: block;
+    font-family: 'MTN Brighter Sans';
+
+}
+.our_team header{
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+.our_team header .small_heading{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.our_team header .small_heading .text{
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'MTN Brighter Sans';
+    font-size: 20px;
+    
+}
+.our_team header .small_heading .dash{
+    width: 60px;
+    height: 3px;
+    background: radial-gradient(at top left, var(--color-two-blue) 30%, var(--color-one-purple) 100%);
+}
+.our_team header .big_heading{
+    font-size: 25px;
+    color: var(--color-five-white);
+    font-family: 'MTN Brighter Sans';
+    text-transform: capitalize;
+}
+.our_team > .wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.our_team > .wrapper .card{
+    height: 400px;
+    width: 100%;
+    padding-block: 50px;
+    background: var(--color-three-darkblue);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'MTN Brighter Sans';
+
+
+}
+.our_team > .wrapper .card:after{
+    content: '';
+    position: absolute;
+    height: 101%;
+    width: 101%;
+    background: radial-gradient(at top left, var(--color-three-darkblue2) 30%, var(--color-three-darkblue2) 100%);
+    border-radius: inherit;
+    z-index: -1;
+    box-shadow: var(--box-shadow);
+}
+.our_team > .wrapper .card:hover:after{
+    background: var(--color-five-white);
+
+}
+.our_team > .wrapper .card > .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.our_team > .wrapper .card > .wrapper .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding: 10px;
+}
+.our_team > .wrapper .card > .wrapper .image .image_wrapper{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 3px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.2s ease-in-out;
+    background: var(--color-three-darkblue2);
+}
+.our_team > .wrapper .card:hover .wrapper .image .image_wrapper{
+    scale: 1.07;
+    background: var(--color-five-white);
+
+}
+
+.our_team > .wrapper .card > .wrapper .image .image_wrapper img{
+    max-width: 100%;
+    border-radius: 50%;
+    
+}
+.our_team > .wrapper .card > .wrapper .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'MTN Brighter Sans';
+
+
+}
+.our_team > .wrapper .card > .wrapper .text span:nth-of-type(1){
+    font-size: 20px;
+    color: var(--color-five-white);
+    font-family: 'MTN Brighter Sans';
+    margin-block: 10px;
+
+}
+.our_team > .wrapper .card > .wrapper .text span{
+    color: var(--color-four-gray);
+    font-family: 'MTN Brighter Sans';
+
+}
+.our_team > .wrapper .card .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.our_team > .wrapper .card .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--color-four-gray);
+	transition: all 0.5s ease;
+}
+.our_team > .wrapper .card:hover .social-links a{
+	color: var(--color-five-white);
+}
+@media only screen and (max-width: 1044px) {
+    .about header .head_text{
+        font-size: 25px;
+        padding-inline: 20px;
+    }
+    
+    .about .about_main_content > .wrapper{
+        flex-direction: column;
+    }
+    .about .about_main_content > .wrapper .text_grid{
+        width: 100%;
+    }
+    .text_grid .card header .big_heading{
+        font-size: 22px;
+    }
+    .text_grid .card article{
+        padding-inline-end: 10px;
+    }
+
+    
+    
+    .about .about_main_content > .wrapper .image_grid{
+        width: 100%;
+    }
+    .about .about_main_content > .wrapper .image_grid{
+        padding-inline: 26px;
+        justify-content: center;
+    }
+
+    
+    
+    
+}
+@media only screen and (max-width: 888px) {
+    .our_team > .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media only screen and (max-width: 577px) {
+    .our_team > .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -122,6 +122,8 @@ function displayTransactions()
             $wallet = htmlspecialchars($transaction['wallet_address']);
             $firstname = htmlspecialchars($transaction['firstname']);
             $lastname = htmlspecialchars($transaction['lastname']);
+            $userId = htmlspecialchars($transaction['user_id']);
+
 
             if ($status == "Completed") {
                 $bg = "rgba(34, 197, 94, 0.2)";
@@ -152,6 +154,10 @@ function displayTransactions()
                     <div class="amount"><?php echo $amount; ?></div>
                 </div>
                 <div class="transaction-details">
+                    <div class="detail-row">
+                        <span class="label">User:</span>
+                        <span class="value"><?php echo $userId; ?></span>
+                    </div>
                     <div class="detail-row">
                         <span class="label">Date:</span>
                         <span class="value"><?php echo date('Y-m-d', strtotime($date)); ?></span>

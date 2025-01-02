@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['button'])) {
 
     if ($stmt->execute()) {
         // Display success message
-        echo "<script>alert('User details updated successfully!'); window.location.href = 'user.php';</script>";
+        echo "<script>alert('User details updated successfully!'); window.location.href = 'users.php';</script>";
     } else {
         // Display error message
         echo "<script>alert('Error updating user details. Please try again.');</script>";
